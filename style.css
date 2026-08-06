@@ -1,0 +1,72 @@
+.container
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    min-height: 100vh;
+    background-color:white;
+    height: 85%;
+}
+.card1,.card2
+{
+    width: 400px;
+}
+@media(max-width:768px)
+{
+    .container
+    {
+        flex-direction: column;
+    }
+    .card1,.card2
+    {
+        width:90%;
+    }
+}
+.account
+{
+    color: blue;
+}
+.createAccBtn
+{
+    background-color: blue;
+    color: azure;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+}
+*{
+    box-sizing: border-box;
+}
+#SuccessPage{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.success-card{
+    background-color: burlywood;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+}
+#NotSuccessPage {
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.error-card {
+    background-color: burlywood;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+}
