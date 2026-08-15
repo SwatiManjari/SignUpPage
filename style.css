@@ -1,72 +1,175 @@
-.container
+*
 {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap:50px;
-    min-height: 100vh;
-    background-color:white;
-    height: 85%;
-}
-.card1,.card2
-{
-    width: 400px;
-}
-@media(max-width:768px)
-{
-    .container
-    {
-        flex-direction: column;
-    }
-    .card1,.card2
-    {
-        width:90%;
-    }
-}
-.account
-{
-    color: blue;
-}
-.createAccBtn
-{
-    background-color: blue;
-    color: azure;
-    border: none;
-    padding: 5px;
-    margin: 5px;
-}
-*{
     box-sizing: border-box;
 }
-#SuccessPage{
+
+body
+{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fb;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-height: 100vh;
+    padding: 15px;
+}
+
+/* Left section */
+
+.card1
+{
+    width: 350px;
+    text-align: center;
+}
+
+.card1 img
+{
+    width: 150px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.card1 h1
+{
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.account
+{
+    color: #4f46e5;
+}
+
+.card1 p
+{
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Signup form */
+
+.card2
+{
+    width: 380px;
+    background-color: white;
+    padding: 22px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.username,
+.password
+{
+    margin-bottom: 10px;
+}
+
+h5
+{
+    margin: 6px 0;
+}
+
+input
+{
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    outline: none;
+    margin-bottom: 8px;
+}
+
+input:focus
+{
+    border-color: #4f46e5;
+}
+
+.card2 span
+{
+    font-size: 12px;
+    color: #666;
+}
+
+.card2 i
+{
+    font-size: 12px;
+    margin-right: 4px;
+}
+
+.createAccBtn
+{
+    width: 100%;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.createAccBtn:hover
+{
+    background-color: #3730a3;
+}
+
+/* Success and error pages */
+
+#SuccessPage,
+#NotSuccessPage
+{
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px;
+    padding: 15px;
 }
-.success-card{
-    background-color: burlywood;
+
+.success-card,
+.error-card
+{
     width: 90%;
-    max-width: 500px;
+    max-width: 450px;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
-#NotSuccessPage {
-    margin:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+
+.success-card
+{
+    background-color: #dcfce7;
 }
-.error-card {
-    background-color: burlywood;
-    width: 90%;
-    max-width: 500px;
-    text-align: center;
-    padding: 20px;
-    border-radius: 12px;
+
+.error-card
+{
+    background-color: #fee2e2;
+}
+
+@media(max-width: 768px)
+{
+    .container
+    {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card1,
+    .card2
+    {
+        width: 90%;
+        max-width: 380px;
+    }
+
+    .card1 h1
+    {
+        font-size: 2rem;
+    }
 }
