@@ -121,6 +121,7 @@ input:focus
 }
 
 
+
 #SuccessPage,
 #NotSuccessPage
 {
@@ -158,18 +159,39 @@ input:focus
     .container
     {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
+        padding: 20px 10px;
     }
 
     .card1,
     .card2
     {
-        width: 90%;
+        width: 95%;
         max-width: 380px;
+    }
+
+    .card1 img
+    {
+        width: 120px;
     }
 
     .card1 h1
     {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .card1 p
+    {
+        font-size: 14px;
+    }
+
+    .card2
+    {
+        padding: 18px;
+    }
+
+    .card2 span
+    {
+        font-size: 11px;
     }
 }
