@@ -1,0 +1,24 @@
+{
+  "name": "signuppage",
+  "version": "1.0.0",
+  "description": "A responsive signup form built using HTML, CSS, and JavaScript. It validates the username and password in real time and provides feedback based on the entered input.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SwatiManjari/SignUpPage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SwatiManjari/SignUpPage/issues"
+  },
+  "homepage": "https://github.com/SwatiManjari/SignUpPage#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

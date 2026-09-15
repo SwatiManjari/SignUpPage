@@ -112,8 +112,16 @@ submitButton.onclick=function()
 
     if(usernameLengthValid &&usernameLetterValid &&usernameStartValid &&usernameSpaceValid &&passwordLengthValid &&passwordUpperValid &&passwordNumberValid &&passwordSpecialValid )
     {
-        document.getElementById("signupPage").style.display="none";
-        document.getElementById("SuccessPage").style.display="flex";
+        fetch("/signup", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            username: username.value,
+            password: password.value
+        })
+    });
     }
 
     else
